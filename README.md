@@ -11,22 +11,22 @@ cp env.example .env  # configure your API keys
 
 ## Usage
 ```bash
-python agent.py --task-dir <TASK_DIR> --solution-dir <SOLUTION_DIR> [--model <MODEL>] [--user-prompt <PROMPT>]
+python giazero/agent.py --task-dir <TASK_DIR> --solution-dir <SOLUTION_DIR> [--model <MODEL>] [--user-prompt <PROMPT>]
 ```
 
 | Argument | Required | Default | Description |
 |----------|----------|---------|-------------|
 | `--task-dir` | Yes | — | Path to task directory |
 | `--solution-dir` | Yes | — | Path to output solutions |
-| `--model` | No | `google_genai:gemini-3-pro-preview` | Model name |
+| `--model` | No | `google_genai:gemini-3-flash-preview` | Model name |
 | `--user-prompt` | No | `Solve the challenge.` | Initial prompt |
 
 ### Example
 ```bash
-python agent.py \
+python giazero/agent.py \
     --task-dir tasks/hello-world \
-    --solution-dir solutions/hello-world \
-    --model google_genai:gemini-3-pro-preview \
+    --solution-dir localdata/solutions/hello-world \
+    --model google_genai:gemini-3-flash-preview \
     --user-prompt "Solve the challenge step by step."
 ```
 
