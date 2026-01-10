@@ -1,0 +1,7 @@
+langchain
+langchain-anthropic
+langchain-google-genai
+langgraph
+pillow
+pydantic
+python-dotenv
